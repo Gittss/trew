@@ -1,0 +1,168 @@
+body,html{
+    height: 100%;
+    background-image: url('../img/back.png');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.Body{
+    padding: 10%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+.info{
+    color: honeydew;
+    margin: 20px;
+    padding-bottom: 5%;
+}
+.info img{
+    margin-top: -10%;
+    float: right;
+    height: 400px;
+    width: 400px;
+}
+.Body a:hover{
+    text-decoration: none;
+}
+.Body p{
+    font-size: 20px;
+}
+.navv{
+    background-color: ivory;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 5px 6px rgb(87, 87, 87);
+    text-align: right;
+    margin:auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    z-index: 1;
+}
+.navv a:hover{
+    text-decoration: none;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.font{
+    font-size: 50px;
+    color:greenyellow;
+    border-radius: 2px;
+    padding: 5px;
+}   
+.font1{
+    color: white;
+    font-family: "Apple Chancery", cursive;
+}
+.font1 p{
+    font-family: 'Franklin Gothic Medium';
+}
+.man{
+    margin-left:2%;
+    margin-right: 2%;
+    float:left; 
+    height:200px;
+    width:170px;
+}
+.timg{
+    margin-left:5%;
+    margin-right: 2%;
+    float:left; 
+    height:150px;
+    width:100px;
+}
+.timgg{
+    margin-left:2%;
+    margin-right: 5%;
+    float: right; 
+    height:150px;
+    width:100px;
+}
+.columnn{
+    width: 50%;
+    padding: 5px;
+    text-align: left;
+}
+.column{
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.card{
+    background: none !important;
+    border: none !important;
+    text-align: center;
+    padding: 5%;
+}
+.cardbox{
+    box-shadow: 3px 4px 5px 2px #4e4d4d93;
+    border-radius: 10px;
+    padding: 100px 0;
+    text-decoration: none;
+    background-color: white;
+    background-image: url('../img/trew.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cardbox .cardhead{
+    transition: transform .8s;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color:rgba(0, 128, 0, 0.7);
+}
+.cardbox:hover{
+    background-color: rgb(218, 253, 166);
+}
+.cardbox:hover .cardhead{
+    transform: translateY(-40px);
+}
+.cardbox .cardtext{
+    visibility: hidden;
+    color: black;
+    padding: 20px 3px;
+    transition: transform .8s;
+    z-index: 1;
+    font-size: 20px;
+    background-color: rgba(247, 244, 242, 0.329);
+}
+.cardbox:hover .cardtext{
+    visibility: visible;
+    transform: translateY(-40px)
+}
+.trew{
+    box-shadow: 3px 4px 5px 2px #4e4d4d93;
+    border-radius: 10px;
+    padding: 100px 0;
+    text-decoration: none;
+    background-color: white;
+    transition: transform .8s;
+}
+.trew:hover{
+    transform: translateY(100px);
+}
+footer{
+    background-color: green;
+    color: honeydew;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+footer a{
+    color: greenyellow;
+}
+footer a:hover{
+    color: honeydew;
+    text-decoration: none;
+}

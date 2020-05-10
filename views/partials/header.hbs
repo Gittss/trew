@@ -1,0 +1,50 @@
+<nav class="navv" id="navbar">
+  <div class="container-fluid navbar-header">
+    <a id="top" class="navbar-brand" onclick="toTop()" style="cursor: pointer;">
+      <img srcset="img/infintree.png" width="50" alt="gits" class="d-inline-block align-middle mr-2">
+    </a>
+    <a id="me1" class="navbar-brand" onclick="toMe()" onmouseover="color(1,1)" onmouseout="color(1,0)" style="cursor: pointer; color: green;"><b>Manager roles</b></a>
+    <a id="me2" class="navbar-brand" onclick="toProjects()" onmouseover="color(2,1)" onmouseout="color(2,0)" style="cursor: pointer; color:green;"><b>Project TREW</b></a>
+    </div>
+  </div>
+</nav>
+<script>
+  window.onscroll= function(){
+    myFunction()
+  }
+  var navbar=document.getElementById("navbar")
+  var sticky=navbar.offsetTop
+
+  function myFunction(){
+    if(window.pageYOffset>=sticky){
+      navbar.classList.add("sticky")
+    }
+    else{
+        navbar.classList.remove("sticky")
+    }
+  }
+  function toTop(){
+    window.scrollTo({top:0, behavior:'smooth',})
+  }
+  function toMe(){
+    var element=document.getElementById("me")
+    element.scrollIntoView({behavior:"smooth"})
+  }
+  function toProjects(){
+    var element=document.getElementById("projects")
+    element.scrollIntoView({behavior:"smooth"})
+  }
+  function color(x,y){
+    switch(x){
+      case 1: var element=document.getElementById("me1")
+                if(y) element.style.color='lightgreen'
+                else element.style.color='green'
+                break;
+      case 2: var element=document.getElementById("me2")
+                if(y) element.style.color='lightgreen'
+                else element.style.color='green'
+                break;
+      default:break;
+    }
+  }
+</script>

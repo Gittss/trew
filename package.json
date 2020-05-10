@@ -1,0 +1,23 @@
+{
+  "name": "trew",
+  "version": "1.0.0",
+  "description": "Project TREW assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gittss/trew.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gittss/trew/issues"
+  },
+  "homepage": "https://github.com/Gittss/trew#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4"
+  }
+}
